@@ -1,0 +1,10 @@
+/data/customer/name
+/data/customer/address
+/data/customer/city
+/data/customer/state
+/data/customer/zip
+/data/customer/phone/residential
+/data/customer/phone/comercial
+/data/file/createdate
+/data/file/deleted
+/data/file/deletedate

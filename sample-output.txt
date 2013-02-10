@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<document>
+	<data>
+		<customer>
+			<name/>
+			<address/>
+			<city/>
+			<state/>
+			<zip/>
+			<phone>
+				<residential/>
+				<comercial/>
+			</phone>
+		</customer>
+		<file>
+			<createdate/>
+			<deleted/>
+			<deletedate/>
+		</file>
+	</data>
+</document>

@@ -1,0 +1,12 @@
+# Numerous always-ignore extensions
+*.diff
+*.pyc
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+*.sass-cache
