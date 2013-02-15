@@ -72,12 +72,15 @@ def convert(lines,*, Output='prettyxml', Limit=100000, PartRegex='^[a-zA-Z0-9_-]
   root = OrderedDict()
 
   for line in lines:
-    line = line.strip()
+    line = line.strip().strip('/')
     if line == '':
       continue
 
     parts = line.split('/')[IgnoreParts:]
     
+    if len(parts) == 1 and parts[0] == '':
+      continue
+
     d = root
     for part in parts:
       i += 1
@@ -85,7 +88,7 @@ def convert(lines,*, Output='prettyxml', Limit=100000, PartRegex='^[a-zA-Z0-9_-]
         raise ValueError('Input exceeded {0} parts.'.format(Limit))
       
       if not matcher.match(part):
-        raise ValueError('Input error: xpath name is does not match /{0}/: {1}'.format(PartRegex, part))      
+        raise ValueError('Input error: xpath name is does not match /{0}/: {1}\nLine was: "{2}"'.format(PartRegex, part, line))      
 
       if part not in d:
         d[part] = OrderedDict()

@@ -1,0 +1,10 @@
+user/
+user/address/
+user/address/street/
+user/address/number
+user/address/city
+user/address/state
+user/phone
+user/phone/residential
+user/phone/comercial
+user/address/country

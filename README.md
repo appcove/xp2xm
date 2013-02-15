@@ -26,7 +26,12 @@ Copyright (c) 2013 AppCove, Inc.
 /data/file/createdate
 /data/file/deleted
 /data/file/deletedate
+
+user/name/first
+/user/name/last/
 ```
+
+Note: leading and trailing slashes are ignored.
 
 #### Sample Output Text:
 
